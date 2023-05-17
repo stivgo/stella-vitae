@@ -42,9 +42,12 @@
                     background-size: cover;
                     min-height: 480px;">
 
-      <article style="background-color: rgba(0, 0, 0, 0.7); width: 100%; min-height: 480px" class="d-flex flex-column p-4 align-content-center justify-content-around " >
+      <article style="background-color: rgba(0, 0, 0, 0.7); width: 100%; min-height: 480px"
+        class="d-flex flex-column p-4 align-content-center justify-content-around ">
         <h2 style="color: aliceblue;">Escuela de enfermeria</h2>
-        <p class="w-50" style="color:#FFF;">Stella Vitae es una escuela de enfermería en Bogotá, DC con un programa de educación de primer nivel. Ofrecemos a nuestros estudiantes una excelente formación técnica y una experiencia de aprendizaje única.</p>
+        <p class="w-50" style="color:#FFF;">Stella Vitae es una escuela de enfermería en Bogotá, DC con un programa de
+          educación de primer nivel. Ofrecemos a nuestros estudiantes una excelente formación técnica y una experiencia
+          de aprendizaje única.</p>
         <a class="btn btn-primary w-50" href="#contacto">Contactenos</a>
       </article>
 
@@ -183,6 +186,38 @@
 
     <section class="p-5" id="contacto">
       <h3>Contacto</h3>
+      <div class="row">
+        <div class="col-sm-6 d-flex flex-column justify-content-around">
+            <h4>Información de contacto</h4>
+            <p> <strong>Dirección:</strong> Calle 72 # 22- 55 Bogotá, Colombia</p>
+            <p> <strong>Teléfono:</strong> +57 1 248 00 00</p>
+            <p> <strong>Correo electrónico:</strong>
+        </div>
+        <div class="col-sm-6 p-3 border rounded">
+          <h4>Solicitar información</h3>
+          <form action="" method="post" class="row">
+            <div class="mb-3 col-6">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3 col-6">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="lastName">
+            </div>
+            <div class="mb-3 col-6">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3 col-6">
+              <label for="phone" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+            <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
