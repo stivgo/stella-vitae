@@ -37,7 +37,7 @@
   </header>
   <main>
 
-    <section style="background-image: url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNjI5NjF8MHwxfHNlYXJjaHw0fHxOdXJzaW5nJTIwc2Nob29sfGVufDB8fHx8MTY4MjQzNjMwNA&ixlib=rb-4.0.3&q=80&w=1080');
+    <section style="background-image: url('assets/fondo.jpeg');
                     background-position: center center;
                     background-size: cover;
                     min-height: 480px;">
@@ -45,7 +45,8 @@
       <article style="background-color: rgba(0, 0, 0, 0.7); width: 100%; min-height: 480px"
         class="d-flex flex-column p-4 align-content-center justify-content-around ">
         <h2 style="color: aliceblue;">Escuela de enfermeria</h2>
-        <p class="w-50" style="color:#FFF;">Stella Vitae es una escuela de enfermería en Bogotá, DC con un programa de
+        <p class="w-50" style="color:#FFF;">Stella Vitae es una escuela de enfermería en Soacha(Cundinamarca) con un
+          programa de
           educación de primer nivel. Ofrecemos a nuestros estudiantes una excelente formación técnica y una experiencia
           de aprendizaje única.</p>
         <a class="btn btn-primary w-50" href="#contacto">Contactenos</a>
@@ -189,7 +190,9 @@
       <div class="row">
         <div class="col-sm-6 d-flex flex-column justify-content-evenly">
           <h4>Información de contacto</h4>
-          <p> <strong>Teléfono:</strong> +57 304-609-9145</p>
+          <p> <strong>Teléfonos:</strong> +57 304-609-9145 | +57 350-452-2400</p>
+          <p> <strong>Dirección:</strong> Calle 33 No. 0-54 E Casa 227</p>
+          <p> <strong>Correo:</strong> <a href="mailto:institutotecnicostellavitaesas@gmail.com">institutotecnicostellavitaesas@gmail.com</a></p>
           <div class="d-flex">
             <a href="https://www.facebook.com/profile.php?id=100090381986776&mibextid=ZbWKwL" class="m-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook"
@@ -209,23 +212,31 @@
         </div>
         <div class="col-sm-6 p-3 border rounded">
           <h4>Solicitar información</h3>
-            <form action="" method="post" class="row">
+            <form form action="https://formsubmit.co/institutotecnicostellavitaesas@gmail.com" method="POST" class="row">
               <div class="mb-3 col-6">
                 <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="name" name="Nombre" required>
               </div>
               <div class="mb-3 col-6">
                 <label for="lastName" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="lastName">
+                <input type="text" class="form-control" id="lastName" name="Apellido" required>
               </div>
               <div class="mb-3 col-6">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email" name="Correo">
               </div>
               <div class="mb-3 col-6">
                 <label for="phone" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="phone">
+                <input type="tel" class="form-control" id="phone" name="Telefono">
               </div>
+              <div class="form-check m-3 col-12">
+                <input class="form-check-input" type="checkbox" value="" id="habeas-data" required>
+                <label class="form-check-label" for="habeas-data"> Autorizo el tratamiento de mis datos personales, conoce nuestra
+                  política de tratamiento de datos personales <a href="assets/habeas-data.pdf" target="_blank">aquí</a>. </label>
+              </div>
+              <input type="hidden" name="_next" value="https://stella-vitae.com">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
               <div class="d-flex justify-content-end">
                 <button type="submit" class="btn btn-primary">Enviar</button>
               </div>
