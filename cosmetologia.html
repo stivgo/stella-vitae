@@ -11,28 +11,33 @@
 
 <body>
   <header class="sticky-top">
-    <nav class="navbar bg-body-tertiary" data-bs-theme="light">
-      <div class="container-fluid row">
-        <div class="col-1"></div>
-        <a class="navbar-brand col-1" href="index.html"> <img src="assets/logo.png" alt="Logo" width="80"></a>
-        <h2 class="col-3">Stella Vitae S.A.S</h2>
-        <div class="col-1"></div>
-        <ul class="nav nav-underline col-6 row">
-          <li class="nav-item dropdown col-4">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">Cursos</a>
-            <ul class="dropdown-menu border-0 p-1" style="background-color: rgb(248, 249, 250, 1);">
-              <li><a class="nav-link" href="enfermeria.html">Tecnicó en Enfermería</a></li>
-              <li><a class="nav-link" href="cosmetologia.html">Tecnicó en Cosmetología y estetica</a></li>
-            </ul>
-          </li>
-          <li class="nav-item col-4">
-            <a class="nav-link" aria-current="page" href="index.html">Servicios</a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" href="index.html">Nosotros</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-evenly">
+        <a class="navbar-brand ms-1" href="index.html"> <img src="assets/logo.png" alt="Logo" width="60"></a>
+        <h3 style="display: inline;" class="ms-1">Stella Vitae S.A.S</h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: flex-end; margin-right: 5%;">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="enfermeria.html">Tecnicó en Enfermería</a></li>
+                <li><a class="dropdown-item" href="cosmetologia.html">Tecnicó en Cosmetología y estetica</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -41,8 +46,8 @@
     <section class="m-5 d-flex justify-content-center">
       <h1>TÉCNICO LABORAL COSMETOLOGIA Y ESTETICA INTEGRAL</h1>
     </section>
-    <section class="mt-2 row" style="margin: 0 3rem 0 10rem">
-      <div class="ms-3 mt-1 col-5 p-0">
+    <section class="mt-2 row" style="margin: 0 5% 0 4%">
+      <div class="ms-3 mt-1 col-sm-9 col-lg-5 p-0">
         <div class="row">
           <div class="col-12">
             <h3 class="text-primary">Dirigido a</h3>
@@ -80,8 +85,8 @@
           </div>
         </div>
       </div>
-      <div class="col-6 d-flex flex-column justify-content-center">
-        <div id="carouselExampleAutoplaying" class="carousel slide m-5" data-bs-ride="carousel">
+      <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-center">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin: 3%;">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="/assets/cosmetologia-1.jpg" class="d-block w-100" style="height: 25rem;" alt="Enfermera">
@@ -107,13 +112,13 @@
       </div>
     </section>
 
-    <section style="margin: 2rem 10rem">
+    <section class="m-4">
       <h2 class="text-primary m-3">Plan de estudios</h2>
       <div class="row">
         <div class="col-sm-12">
           <div class=" m-3">
-            <div class="d-flex">
-              <div class="card card-body m-3" style="height: 18rem; width: 30%;">
+            <div class="row">
+              <div class="card card-body m-3 col-sm-1 col-lg-1">
                 <div class="d-flex justify-content-center">
                   <h4>I Ciclo</h4>
                 </div>
@@ -129,7 +134,7 @@
                   <li>Atención al cliente</li>
                 </ul>
               </div>
-              <div class="card card-body m-3" style="height: 18rem; width: 30%;">
+              <div class="card card-body m-3 col-sm-1 col-lg-1">
                 <div class="d-flex justify-content-center">
                   <h4>II Ciclo</h4>
                 </div>
@@ -143,7 +148,7 @@
                   <li>Masajes corporales (relajantes, de reducción)</li>
                 </ul>
               </div>
-              <div class="card card-body m-3" style="height: 18rem; width: 30%;">
+              <div class="card card-body m-3 col-sm-1 col-lg-1">
                 <div class="d-flex justify-content-center">
                   <h4>III Ciclo</h4>
                 </div>
@@ -161,7 +166,7 @@
         </div>
       </div>
     </section>
-    <section class="p-5" style="margin: 0 7rem 0 10rem">
+    <section class="p-5">
       <div class="row">
         <div class="col-sm-6 d-flex flex-column justify-content-evenly">
           <h3>Contacto</h3>
@@ -190,19 +195,19 @@
           <h4>Solicitar información</h3>
             <form form action="https://formsubmit.co/institutotecnicostellavitaesas@gmail.com" method="POST"
               class="row">
-              <div class="mb-3 col-6">
+              <div class="mb-3 col-sm-12 col-lg-6">
                 <label for="name" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="name" name="Nombre" required>
               </div>
-              <div class="mb-3 col-6">
+              <div class="mb-3 col-sm-12 col-lg-6">
                 <label for="lastName" class="form-label">Apellido</label>
                 <input type="text" class="form-control" id="lastName" name="Apellido" required>
               </div>
-              <div class="mb-3 col-6">
+              <div class="mb-3 col-sm-12 col-lg-6">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="email" name="Correo">
               </div>
-              <div class="mb-3 col-6">
+              <div class="mb-3 col-sm-12 col-lg-6">
                 <label for="phone" class="form-label">Teléfono</label>
                 <input type="tel" class="form-control" id="phone" name="Telefono">
               </div>
